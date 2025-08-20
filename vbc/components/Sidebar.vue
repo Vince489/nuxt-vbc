@@ -5,19 +5,19 @@
                 <div id="sidebar-content">
                     <nav class="space-y-2">
                         <NuxtLink to="/" class="flex items-center p-3 rounded-lg bg-gray-700 text-gray-300">
-                            <i class="fas fa-home mr-3 w-6 text-center"></i>
+                            <Icon name="uil:home" class="mr-3 w-6 text-center" />
                             <span>Home</span>
                         </NuxtLink>
                         <NuxtLink to="/rules" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-compass mr-3 w-6 text-center"></i>
+                            <Icon name="uil:compass" class="mr-3 w-6 text-center" />
                             <span>Rules</span>
                         </NuxtLink>
                         <NuxtLink to="/shorts" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-play-circle mr-3 w-6 text-center"></i>
+                            <Icon name="uil:play-circle" class="mr-3 w-6 text-center" />
                             <span>Shorts</span>
                         </NuxtLink>
                         <NuxtLink to="/my-fighters" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-tv mr-3 w-6 text-center"></i>
+                            <Icon name="heroicons:tv" class="mr-3 w-6 text-center" />
                             <span>My Fighters</span>
                         </NuxtLink>
                     </nav>
@@ -26,23 +26,23 @@
 
                     <nav class="space-y-2">
                         <NuxtLink to="/library" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-photo-video mr-3 w-6 text-center"></i>
+                            <Icon name="uil:video" class="mr-3 w-6 text-center" />
                             <span>Library</span>
                         </NuxtLink>
                         <NuxtLink to="/history" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-history mr-3 w-6 text-center"></i>
+                            <Icon name="uil:history" class="mr-3 w-6 text-center" />
                             <span>History</span>
                         </NuxtLink>
                         <NuxtLink to="/watch-later" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-clock mr-3 w-6 text-center"></i>
+                            <Icon name="uil:clock" class="mr-3 w-6 text-center" />
                             <span>Watch Later</span>
                         </NuxtLink>
                         <NuxtLink to="/liked-videos" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-thumbs-up mr-3 w-6 text-center"></i>
+                            <Icon name="uil:thumbs-up" class="mr-3 w-6 text-center" />
                             <span>Liked Videos</span>
                         </NuxtLink>
                         <NuxtLink to="/ppv" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-ticket-alt mr-3 w-6 text-center"></i>
+                            <Icon name="uil:ticket" class="mr-3 w-6 text-center" />
                             <span>PPV Events</span>
                         </NuxtLink>
                     </nav>
@@ -74,23 +74,23 @@
                     <h3 class="px-3 mb-1 text-sm font-medium text-gray-400">EXPLORE</h3>
                     <nav class="space-y-2 mt-2">
                         <NuxtLink to="#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-fire mr-3 w-6 text-center"></i>
+                            <Icon name="uil:chart-line" class="mr-3 w-6 text-center" />
                             <span>Trending</span>
                         </NuxtLink>
                         <NuxtLink to="#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-music mr-3 w-6 text-center"></i>
+                            <Icon name="uil:music" class="mr-3 w-6 text-center" />
                             <span>Music</span>
                         </NuxtLink>
                         <NuxtLink to="#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-gamepad mr-3 w-6 text-center"></i>
+                            <Icon name="heroicons:device-phone-mobile" class="mr-3 w-6 text-center" />
                             <span>Gaming</span>
                         </NuxtLink>
                         <NuxtLink to="#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-newspaper mr-3 w-6 text-center"></i>
+                            <Icon name="uil:newspaper" class="mr-3 w-6 text-center" />
                             <span>News</span>
                         </NuxtLink>
                         <NuxtLink to="#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
-                            <i class="fas fa-trophy mr-3 w-6 text-center"></i>
+                            <Icon name="uil:baseball-ball" class="mr-3 w-6 text-center" />
                             <span>Sports</span>
                         </NuxtLink>
                     </nav>
@@ -190,5 +190,23 @@ defineExpose({
 <style scoped>
 .sidebar-transition {
     transition: transform 0.3s ease-in-out;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d3748;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #718096;
 }
 </style>
