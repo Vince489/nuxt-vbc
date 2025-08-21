@@ -1,0 +1,279 @@
+            <!-- Upcoming Events Section -->
+            <div class="bg-gray-900 p-6 md:p-8 mb-6 overflow-hidden">
+                <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700">Upcoming Events</h2>
+                <div class="swiper-container relative" style="padding-bottom: 40px;">
+                    <div class="swiper-wrapper">
+                        <!-- Card 1: New Event -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                                <!-- Image -->
+                                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">Promoter Image</span>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-white mb-2">Summer Smash Fest</h3>
+                                    <p class="text-blue-400 text-sm mb-1">📅 Aug 20, 2025 | 8:00 PM EST</p>
+                                    <p class="text-gray-400 text-xs mb-3">Main Event: Titan vs. Goliath</p>
+                                    <div class="flex justify-between text-gray-500 text-xs mb-4">
+                                    <span>🎟️ Premium Access</span>
+                                    <a href="#" class="text-red-500 hover:underline">Details</a>
+                                    </div>
+                                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-md transition-colors">
+                                    Set Reminder / Purchase
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2: PPV Event -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                                <!-- Image -->
+                                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">Promoter Image</span>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-white mb-2">Iron Fist Clash PPV</h3>
+                                    <p class="text-blue-400 text-sm mb-1">📅 Aug 10, 2025 | 7:00 PM EST</p>
+                                    <p class="text-gray-400 text-xs mb-3">Main Event: Fighter X vs. Fighter Y</p>
+                                    <div class="flex justify-between text-gray-500 text-xs mb-4">
+                                    <span>🎟️ Premium Access</span>
+                                    <a href="#" class="text-red-500 hover:underline">Details</a>
+                                    </div>
+                                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-md transition-colors">
+                                    Set Reminder / Purchase
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3: Tournament Event -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                                <!-- Image -->
+                                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">Promoter Image</span>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-white mb-2">Global Gauntlet</h3>
+                                    <p class="text-green-500 text-sm mb-1">📅 Sept 01, 2025 | 1:00 PM EST</p>
+                                    <p class="text-gray-400 text-xs mb-3">Featherweight Division</p>
+                                    <div class="flex justify-between text-gray-500 text-xs mb-4">
+                                    <span>🏆 Bracket Ready</span>
+                                    <a href="#" class="text-green-500 hover:underline">View Bracket</a>
+                                    </div>
+                                    <button class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 rounded-md transition-colors">
+                                    View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4: New Event -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                                <!-- Image -->
+                                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">Promoter Image</span>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-white mb-2">Autumn Brawl</h3>
+                                    <p class="text-blue-400 text-sm mb-1">📅 Oct 15, 2025 | 9:00 PM EST</p>
+                                    <p class="text-gray-400 text-xs mb-3">Main Event: Blaze vs. Frost</p>
+                                    <div class="flex justify-between text-gray-500 text-xs mb-4">
+                                    <span>🎟️ Premium Access</span>
+                                    <a href="#" class="text-red-500 hover:underline">Details</a>
+                                    </div>
+                                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-md transition-colors">
+                                    Set Reminder / Purchase
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Scrollbar -->
+                    <div class="swiper-scrollbar" style="bottom: 0;"></div>
+                    <!-- Add Navigation -->
+                </div>
+            </div>
+
+            <!-- Recent Fights Section -->
+            <div class="bg-gray-900 rounded-lg p-6 md:p-8 mb-6 overflow-hidden">
+                <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700">Recent Fights</h2>
+                <div class="swiper-container relative" style="padding-bottom: 40px;">
+                    <div class="swiper-wrapper">
+                        <!-- Fight 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative aspect-video bg-gray-700 overflow-hidden rounded-lg">
+                                    <img src="./images/jab.png" alt="Tony Urango vs Wallup Buding" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-110">
+                                    <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        15:32
+                                    </div>
+                                    <div class="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        <i class="fas fa-play mr-1"></i>Watch Now
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="font-bold text-lg mb-1 text-gray-300 hover:text-blue-500">
+                                        <a href="#">Tony Urango vs Wallup Buding</a>
+                                    </h3>
+                                    <div class="text-sm text-gray-400 mb-2">
+                                        <span>1.2k views</span>
+                                        <span class="mx-2">•</span>
+                                        <span>3 days ago</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-400">
+                                        <div class="w-8 h-8 rounded-full bg-gray-600 overflow-hidden">
+                                            <img src="./images/vbc-logo.png" alt="Channel icon" class="w-full h-full object-cover"/>
+                                        </div>
+                                        <div class="ml-2">
+                                            <p class="text-sm">METABOX PROMOTIONS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fight 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative aspect-video bg-gray-700 overflow-hidden rounded-lg">
+                                    <img src="./images/will.png" alt="Ralph Kiko vs Bruce Coverton" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-110">
+                                    <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        22:17
+                                    </div>
+                                    <div class="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        <i class="fas fa-play mr-1"></i>Watch Now
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="font-bold text-lg mb-1 text-gray-300 hover:text-blue-500">
+                                        <a href="#">Ralph Kiko vs Bruce Coverton</a>
+                                    </h3>
+                                    <div class="text-sm text-gray-400 mb-2">
+                                        <span>2k views</span>
+                                        <span class="mx-2">•</span>
+                                        <span>6 days ago</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-400">
+                                        <div class="w-8 h-8 rounded-full bg-gray-600 overflow-hidden">
+                                            <img src="./images/viva2.png" alt="Channel icon" class="w-full h-full object-cover"/>
+                                        </div>
+                                        <div class="ml-2">
+                                            <p class="text-sm">StarBoxing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fight 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative aspect-video bg-gray-700 overflow-hidden rounded-lg">
+                                    <img src="./images/lame.png" alt="Ahmad Khan vs Kevin Sneed" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-110">
+                                    <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        12:45
+                                    </div>
+                                    <div class="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        <i class="fas fa-play mr-1"></i>Watch Now
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="font-bold text-lg mb-1 text-gray-300 hover:text-blue-500">
+                                        <a href="#">Ahmad Khan vs Kevin Sneed</a>
+                                    </h3>
+                                    <div class="text-sm text-gray-400 mb-2">
+                                        <span>850 views</span>
+                                        <span class="mx-2">•</span>
+                                        <span>1 week ago</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-400">
+                                        <div class="w-8 h-8 rounded-full bg-gray-600 overflow-hidden">
+                                            <img src="./images/vbc-logo.png" alt="Channel icon" class="w-full h-full object-cover"/>
+                                        </div>
+                                        <div class="ml-2">
+                                            <p class="text-sm">METABOX PROMOTIONS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fight 4 -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative aspect-video bg-gray-700 overflow-hidden rounded-lg">
+                                    <img src="./images/jab.png" alt="John Doe vs Mike Tyson" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-110">
+                                    <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        10:20
+                                    </div>
+                                    <div class="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        <i class="fas fa-play mr-1"></i>Watch Now
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="font-bold text-lg mb-1 text-gray-300 hover:text-blue-500">
+                                        <a href="#">John Doe vs Mike Tyson</a>
+                                    </h3>
+                                    <div class="text-sm text-gray-400 mb-2">
+                                        <span>1.5k views</span>
+                                        <span class="mx-2">•</span>
+                                        <span>2 days ago</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-400">
+                                        <div class="w-8 h-8 rounded-full bg-gray-600 overflow-hidden">
+                                            <img src="./images/vbc-logo.png" alt="Channel icon" class="w-full h-full object-cover"/>
+                                        </div>
+                                        <div class="ml-2">
+                                            <p class="text-sm">METABOX PROMOTIONS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fight 5 -->
+                        <div class="swiper-slide">
+                            <div class="bg-gray-800 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative aspect-video bg-gray-700 overflow-hidden rounded-lg">
+                                    <img src="./images/will.png" alt="Alex Smith vs David Brown" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-110">
+                                    <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        18:45
+                                    </div>
+                                    <div class="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                                        <i class="fas fa-play mr-1"></i>Watch Now
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="font-bold text-lg mb-1 text-gray-300 hover:text-blue-500">
+                                        <a href="#">Alex Smith vs David Brown</a>
+                                    </h3>
+                                    <div class="text-sm text-gray-400 mb-2">
+                                        <span>950 views</span>
+                                        <span class="mx-2">•</span>
+                                        <span>4 days ago</span>
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-400">
+                                        <div class="w-8 h-8 rounded-full bg-gray-600 overflow-hidden">
+                                            <img src="./images/viva2.png" alt="Channel icon" class="w-full h-full object-cover"/>
+                                        </div>
+                                        <div class="ml-2">
+                                            <p class="text-sm">StarBoxing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Scrollbar -->
+                    <div class="swiper-scrollbar" style="bottom: 0;"></div>
+                    <!-- Add Navigation -->
+                </div>
+            </div>
