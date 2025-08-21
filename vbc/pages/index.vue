@@ -27,10 +27,45 @@
                 </button>
             </div>
         </section>
+
+            <!-- Live Now Section -->
+            <section class="section-snap fade-in-up stagger-2">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-bold flex items-center">
+                        <span class="animate-pulse w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+                        Live Now
+                    </h2>
+                    <span class="text-sm text-gray-400">3 active streams</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <LiveCard
+                        image-src="/images/jab.png"
+                        title="Thunder vs Storm - Round 3"
+                        description="Heavyweight Championship • Madison Square Garden"
+                        viewers="2.3K"
+                    />
+
+                    <LiveCard
+                        image-src="/images/will.png"
+                        title="Lightning vs Flash - Semifinal"
+                        description="Middleweight Tournament • Tokyo Arena"
+                        viewers="1.8K"
+                    />
+
+                    <LiveCard
+                        image-src="/images/lame.png"
+                        title="Rookie Championship"
+                        description="Amateur Division • Local Gym"
+                        viewers="945"
+                    />
+                </div>
+            </section>
     </div>
 </template>
 
 <script setup>
+import LiveCard from '@/components/LiveCard.vue'
 </script>
 
 <style scoped>
