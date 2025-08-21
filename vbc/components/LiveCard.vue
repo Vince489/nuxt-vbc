@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-800 rounded-xl overflow-hidden card-hover">
     <div class="relative">
-      <img :src="imageSrc" :alt="title" class="w-full h-40 object-cover">
+      <img :src="imageSrc" :alt="title" class="w-full h-40 md:h-56 object-cover object-center">
       <div class="absolute top-3 left-3 bg-red-600 px-2 py-1 rounded text-sm font-semibold">
         🔴 LIVE
       </div>
