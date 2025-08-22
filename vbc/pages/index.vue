@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="overflow-x-hidden">
         <!-- Hero Section -->
-        <section class="relative w-screen left-1/2 -translate-x-1/2 h-screen overflow-hidden mb-12">
+        <section class="relative h-screen overflow-hidden mb-12">
             <!-- Background Image -->
             <div class="absolute inset-0">
                 <img
@@ -15,7 +15,7 @@
             <div class="absolute inset-0 bg-black/40"></div>
 
             <!-- Content -->
-            <div class="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
+            <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center text-white">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                     
                 </h1>
