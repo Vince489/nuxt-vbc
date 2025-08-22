@@ -209,11 +209,15 @@
 
         <!-- Game Modes Section -->
         <GameModesGrid />
+
+        <!-- News Section -->
+        <NewsGrid />
     </div>
 </template>
 
 <script setup>
 import { ref, onMounted, computed } from 'vue'
+import NewsGrid from '@/components/NewsGrid.vue'
 
 const carousel = ref(null)
 const upcomingCarousel = ref(null)
