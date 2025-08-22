@@ -9,7 +9,7 @@
       <Sidebar ref="sidebar" />
 
       <!-- Page content -->
-      <main id="main-content" class="flex-1 overflow-y-auto p-4 md:p-8">
+      <main id="main-content" class="flex-1 overflow-y-auto p-4 md:p-8 lg:px-16 xl:px-24">
         <slot />
       </main>
     </div>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Hero Section -->
-        <section class="relative w-full h-screen overflow-hidden mb-12">
+        <section class="relative w-screen left-1/2 -translate-x-1/2 h-screen overflow-hidden mb-12">
             <!-- Background Image -->
             <div class="absolute inset-0">
                 <img
