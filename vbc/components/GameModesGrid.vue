@@ -3,32 +3,32 @@ import { ref } from 'vue';
 
 const gameModes = ref([
   {
-    icon: 'person',
+    icon: 'uil:user-circle',
     title: 'Legacy Mode',
     description: 'Forge your legend from amateur to champion.'
   },
   {
-    icon: 'trophy',
+    icon: 'uil:trophy',
     title: 'Tournaments',
     description: 'Compete for glory in structured events.'
   },
   {
-    icon: 'hand',
+    icon: 'iconoir:boxing-glove',
     title: 'Custom Fight',
     description: 'Set your own rules for ultimate control.'
   },
   {
-    icon: 'people',
+    icon: 'uil:users-alt',
     title: 'Multiplayer Arena',
     description: 'Challenge players worldwide.'
   },
   {
-    icon: 'person-add',
+    icon: 'uil:user-plus',
     title: 'Friend Match',
     description: 'Fight your friends head-to-head.'
   },
   {
-    icon: 'book',
+    icon: 'uil:book-open',
     title: 'Fighter Roster',
     description: 'Browse all available fighters.'
   }

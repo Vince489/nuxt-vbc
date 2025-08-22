@@ -1,22 +1,29 @@
-<script setup lang="ts">
-interface GameModeCardProps {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-const props = defineProps<GameModeCardProps>();
-</script>
-
 <template>
   <div class="game-mode-card">
     <div class="icon-container">
-      <NuxtIcon :name="props.icon" class="game-icon" filled />
+      <Icon :name="props.icon" class="game-icon" />
     </div>
     <h3 class="game-title">{{ props.title }}</h3>
     <p class="game-description">{{ props.description }}</p>
   </div>
 </template>
+
+<script setup>
+const props = defineProps({
+  icon: {
+    type: String,
+    required: true
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  }
+});
+</script>
 
 <style scoped>
 .game-mode-card {
