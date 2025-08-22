@@ -26,13 +26,6 @@
           <p class="text-sm">{{ channelName }}</p>
         </div>
       </div>
-      <div class="mt-3 bg-gray-700 p-3 rounded-lg">
-        <h4 class="font-semibold text-gray-300 mb-1">Fight Details</h4>
-        <div class="text-sm text-gray-400">
-          <p><span class="font-medium">{{ fighter1 }}</span> vs <span class="font-medium">{{ fighter2 }}</span></p>
-          <p class="mt-1">{{ weightClass }} • {{ eventName }}</p>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -64,22 +57,6 @@ defineProps({
     required: true
   },
   channelName: {
-    type: String,
-    required: true
-  },
-  fighter1: {
-    type: String,
-    required: true
-  },
-  fighter2: {
-    type: String,
-    required: true
-  },
-  weightClass: {
-    type: String,
-    required: true
-  },
-  eventName: {
     type: String,
     required: true
   }
