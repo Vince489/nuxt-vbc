@@ -8,40 +8,44 @@
                             <Icon name="uil:home" class="mr-3 w-6 text-center" />
                             <span>Home</span>
                         </NuxtLink>
-                        <NuxtLink to="/rules" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="uil:compass" class="mr-3 w-6 text-center" />
-                            <span>Rules</span>
+                            <span>Getting Started</span>
                         </NuxtLink>
-                        <NuxtLink to="/shorts" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="uil:play-circle" class="mr-3 w-6 text-center" />
-                            <span>Shorts</span>
+                            <span>EAC</span>
                         </NuxtLink>
-                        <NuxtLink to="/my-fighters" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                            <Icon name="uil:play-circle" class="mr-3 w-6 text-center" />
+                            <span>EBCA</span>
+                        </NuxtLink>
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="heroicons:tv" class="mr-3 w-6 text-center" />
-                            <span>My Fighters</span>
+                            <span>FYTREC</span>
                         </NuxtLink>
                     </nav>
 
                     <hr class="my-3 border-gray-700">
 
                     <nav class="space-y-2">
-                        <NuxtLink to="/library" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="uil:video" class="mr-3 w-6 text-center" />
-                            <span>Library</span>
+                            <span>Promoters</span>
                         </NuxtLink>
-                        <NuxtLink to="/history" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="uil:history" class="mr-3 w-6 text-center" />
-                            <span>History</span>
+                            <span>Managers</span>
                         </NuxtLink>
-                        <NuxtLink to="/watch-later" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="uil:clock" class="mr-3 w-6 text-center" />
-                            <span>Watch Later</span>
+                            <span>Trainers</span>
                         </NuxtLink>
-                        <NuxtLink to="/liked-videos" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="uil:thumbs-up" class="mr-3 w-6 text-center" />
-                            <span>Liked Videos</span>
+                            <span>Gyms</span>
                         </NuxtLink>
-                        <NuxtLink to="/ppv" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
+                        <NuxtLink to="/#" class="flex items-center p-3 rounded-lg hover:bg-gray-700 text-gray-300">
                             <Icon name="uil:ticket" class="mr-3 w-6 text-center" />
                             <span>PPV Events</span>
                         </NuxtLink>

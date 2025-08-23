@@ -16,15 +16,14 @@
 
             <!-- Content -->
             <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center text-white">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                    
-                </h1>
-                <p class="text-xl md:text-2xl max-w-2xl mb-8">
-                    
-                </p>
-                <button class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-medium transition-colors">
-                    Get Started
-                </button>
+                <!-- New content for lower left corner -->
+                <div class="absolute bottom-8 left-8 text-left">
+                    <p class="text-3xl font-bold mb-2">"Killer879" vs. "BoxTrot"</p>
+                    <p class="text-lg mb-4">Live from Las Vegas! | July 25, 2025 - 8:00 PM EST</p>
+                    <button class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-medium transition-colors">
+                        Pre-order PPV
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -35,7 +34,7 @@
                     <span class="animate-pulse w-3 h-3 bg-red-500 rounded-full mr-3"></span>
                     Live Now
                 </h2>
-                <span class="text-sm text-gray-400">3 active streams</span>
+                <span class="text-sm text-gray-400">5 active streams</span>
             </div>
 
             <div class="relative overflow-hidden">
@@ -90,6 +89,23 @@
                             viewers="945"
                         />
                     </div>
+                    <!-- Additional Live Cards -->
+                    <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                        <LiveCard
+                            image-src="/images/jab.png"
+                            title="Clash of Titans - Final"
+                            description="Lightweight Division • London Arena"
+                            viewers="3.1K"
+                        />
+                    </div>
+                    <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                        <LiveCard
+                            image-src="/images/will.png"
+                            title="Rising Stars Showcase"
+                            description="Featherweight Prospects • New York City"
+                            viewers="1.5K"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
@@ -109,9 +125,9 @@
 
                 <!-- Navigation dots -->
                 <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
-                    <div v-for="(card, index) in 3" :key="index"
+                    <div v-for="(card, index) in 5" :key="index"
                          class="w-2 h-2 rounded-full transition-colors"
-                         :class="upcomingCurrentCardIndex === index ? 'bg-blue-500' : 'bg-gray-300'">
+                         :class="currentCardIndex === index ? 'bg-blue-500' : 'bg-gray-300'">
                     </div>
                 </div>
 

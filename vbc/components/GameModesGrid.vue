@@ -37,7 +37,7 @@ const gameModes = ref([
 
 <template>
   <div class="game-modes-container">
-    <h1 class="section-title">Explore Game Modes</h1>
+    <h1 class="section-title">Game Modes</h1>
     <div class="game-modes-grid">
       <GameModeCard
         v-for="(mode, index) in gameModes"
