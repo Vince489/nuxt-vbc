@@ -6,7 +6,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
-            <img src="/images/logo.svg" alt="Virtron Logo" class="h-6">
+            <NuxtLink to="/">
+                <img src="/images/logo.svg" alt="Virtron Logo" class="h-6">
+            </NuxtLink>
         </div>
 
         <div class="flex items-center space-x-3">

@@ -20,9 +20,7 @@
         <a href="#" class="text-red-500 hover:underline">Details</a>
       </div>
 
-      <button
-        :class="`w-full bg-${buttonColor}-600 hover:bg-${buttonColor}-700 text-white font-semibold py-2.5 rounded-md transition-colors`"
-      >
+      <button :class="buttonClass">
         {{ buttonText }}
       </button>
     </div>
@@ -30,7 +28,9 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue';
+
+const props = defineProps({
   title: {
     type: String,
     required: true
@@ -63,5 +63,18 @@ defineProps({
     type: String,
     default: "blue"
   }
-})
+});
+
+const buttonClass = computed(() => {
+  return [
+    'w-full',
+    `bg-${props.buttonColor}-600`,
+    `hover:bg-${props.buttonColor}-700`,
+    'text-white',
+    'font-semibold',
+    'py-2.5',
+    'rounded-md',
+    'transition-colors'
+  ];
+});
 </script>
