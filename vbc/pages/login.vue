@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-gray-900">
+<div class="min-h-screen flex items-center justify-center bg-gray-800">
     <div class="w-full max-w-6xl mx-auto">
-      <div class="flex flex-col lg:flex-row bg-gray-800 rounded-2xl shadow-2xl overflow-hidden min-h-[600px] border border-gray-700">
+<div class="flex flex-col lg:flex-row bg-gray-800 overflow-hidden min-h-screen">
         <!-- Left Panel -->
         <div class="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 p-8 flex-col justify-center items-center text-white relative overflow-hidden">
           <div class="absolute inset-0 hero-pattern opacity-20"></div>
@@ -11,19 +11,19 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
-            <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Welcome to Aurora</h1>
-            <p class="text-xl opacity-90 mb-8 text-gray-200">Experience the future of digital interaction</p>
+            <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Welcome to Virtron</h1>
+            <p class="text-xl opacity-90 mb-8 text-gray-200">Experience the future of esports!</p>
             <div class="flex justify-center space-x-4 mb-6">
               <div class="w-3 h-3 bg-white/40 rounded-full animate-pulse"></div>
               <div class="w-3 h-3 bg-white/60 rounded-full animate-pulse animation-delay-200"></div>
               <div class="w-3 h-3 bg-white/80 rounded-full animate-pulse animation-delay-400"></div>
             </div>
-            <p class="text-sm opacity-75 text-gray-300">Join thousands of users who trust Aurora</p>
+            <p class="text-sm opacity-75 text-gray-300">Join thousands of users who trust Virtron</p>
           </div>
         </div>
 
         <!-- Right Panel -->
-        <div class="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center bg-gray-800">
+<div class="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
           <div class="w-full max-w-md mx-auto">
             <!-- Tab Selector -->
             <div class="flex bg-gray-700 rounded-lg p-1 mb-8 border border-gray-600">
