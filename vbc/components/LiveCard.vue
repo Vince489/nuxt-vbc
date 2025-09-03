@@ -5,14 +5,14 @@
       <div class="absolute top-3 left-3 bg-red-600 px-2 py-1 rounded text-sm font-semibold">
         🔴 LIVE
       </div>
-      <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-sm">
+      <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-sm text-white">
         {{ viewers }} viewers
       </div>
     </div>
     <div class="p-4">
-      <h3 class="font-bold mb-2">{{ title }}</h3>
+      <h3 class="font-bold mb-2 text-white">{{ title }}</h3>
       <p class="text-gray-400 text-sm mb-3">{{ description }}</p>
-      <button class="w-full bg-red-600 hover:bg-red-700 py-2 rounded-lg transition-colors">
+      <button class="w-full bg-red-600 hover:bg-red-700 py-2 rounded-lg transition-colors text-white font-semibold">
         Watch Live
       </button>
     </div>
