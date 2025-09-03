@@ -5,8 +5,8 @@
     <section class="relative min-h-screen flex items-center justify-center">
       <!-- Background Image -->
       <div class="absolute inset-0">
-        <img 
-          src="/images/banner.png" 
+        <img
+          src="/images/banner.png"
           alt="Hero Background"
           class="w-full h-full object-cover"
         />
@@ -19,6 +19,39 @@
       <!-- Main Heading -->
     </div>
   </section>
+
+    <!-- Live Now Section -->
+    <section class="bg-gray-900 p-6 md:p-8 mb-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700">🔴 Live Now</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <LiveCard
+            image-src="/images/jab.png"
+            title="Championship Bout: Thunder vs Lightning"
+            description="Heavyweight title fight happening now! Don't miss the action."
+            :viewers="2847"
+          />
+          <LiveCard
+            image-src="/images/will.png"
+            title="Amateur Tournament Finals"
+            description="Young fighters competing for the amateur championship."
+            :viewers="1523"
+          />
+          <LiveCard
+            image-src="/images/lame.png"
+            title="Training Session with Pro Fighters"
+            description="Watch professional fighters train and share techniques."
+            :viewers="892"
+          />
+          <LiveCard
+            image-src="/images/banner.png"
+            title="VBC Community Event"
+            description="Special community boxing event with local fighters."
+            :viewers="645"
+          />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -48,5 +81,15 @@ const toggleSidebar = () => {
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #718096;
+}
+
+/* Card hover effect for LiveCard components */
+:deep(.card-hover) {
+  transition: all 0.3s ease;
+}
+
+:deep(.card-hover:hover) {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 </style>
