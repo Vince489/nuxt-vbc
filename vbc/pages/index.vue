@@ -23,12 +23,15 @@
     <!-- Live Now Section -->
     <section class="bg-gray-900 p-6 md:p-8 mb-6">
       <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700">🔴 Live Now</h2>
+        <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700 flex items-center">
+          <span class="animate-pulse w-3 h-3 bg-red-600 rounded-full mr-3"></span>
+          Live Now
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <LiveCard
             image-src="/images/jab.png"
             title="Championship Bout: Thunder vs Lightning"
-            description="Heavyweight title fight happening now! Don't miss the action."
+            description="Heavyweight title fight happening now! Don't miss it."
             :viewers="2847"
           />
           <LiveCard
