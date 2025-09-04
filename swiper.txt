@@ -1,0 +1,273 @@
+Swiper Element (WebComponent)
+Swiper web components are available since Swiper version 9.
+
+Custom elements are supported in all major browsers and by almost every framework.
+
+Installation
+There are few options on how to install Swiper Element into your project:
+
+Install & Register from NPM
+We can install Swiper from NPM
+
+npm install swiper
+When you import Swiper custom elements from node modules, we need to manually register it. It should be done only once and it registers Swiper custom elements globally.
+
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
+Swiper Custom Elements from CDN
+You can also install it from CDN by directly adding it to the website with <script> tag:
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+In this case, it will be automatically registered, no need to call register()
+
+Usage
+After we install Swiper Element (via node modules and calling register() or by including a script tag), there are 2 web components (custom elements) available for usage:
+
+<swiper-container> - main Swiper element where you define all parameters
+<swiper-slide> - Swiper slide element
+<swiper-container>
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+Parameters As Attributes
+All Swiper parameters are available in a form of kebab-case attributes on <swiper-container>, for example:
+
+<swiper-container slides-per-view="3" speed="500" loop="true" css-mode="true">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+All parameters that are passed as objects also can be passed as attributes in a form of [key]-[subkey]="value".
+
+For example, such configuration:
+
+new Swiper('.swiper', {
+  slidesPerView: 3,
+  grid: {
+    rows: 3,
+  },
+  mousewheel: {
+    forceToAxis: true,
+  },
+});
+should be passed in this way:
+
+<swiper-container
+  slides-per-view="3"
+  grid-rows="3"
+  mousewheel-force-to-axis="true"
+>
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+Parameters As Props
+In some more complex cases when we have more complex parameters objects (like with breakpoints), we can pass all parameters as HTMLElement properties.
+
+Here, we need to add init="false" attribute to prevent Swiper from initialization until we pass all required parameters.
+
+<!-- Add init="false" -->
+<swiper-container init="false">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+<script>
+  // swiper element
+  const swiperEl = document.querySelector('swiper-container');
+
+  // swiper parameters
+  const swiperParams = {
+    slidesPerView: 1,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+    on: {
+      init() {
+        // ...
+      },
+    },
+  };
+
+  // now we need to assign all parameters to Swiper element
+  Object.assign(swiperEl, swiperParams);
+
+  // and now initialize it
+  swiperEl.initialize();
+</script>
+Updating Parameters
+Swiper parameters can be updated by directly changing Swiper element attributes or HTMLElement properties (if it was initialized with props);
+
+<swiper-container slides-per-view="1">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+
+<button>Update</button>
+
+<script>
+  const swiperEl = document.querySelector('swiper-container');
+  const buttonEl = document.querySelector('button');
+
+  buttonEl.addEventListener('click', () => {
+    // if it was initialized with attributes
+    swiperEl.setAttribute('slides-per-view', '3');
+
+    // or if it was initialized with props
+    swiperEl.slidesPerView = 3;
+  });
+</script>
+Access To Swiper Instance
+Initialized Swiper instance is available as swiper prop of Swiper's HTMLElement:
+
+<swiper-container slides-per-view="1">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+
+<button>Slide Next</button>
+
+<script>
+  const swiperEl = document.querySelector('swiper-container');
+  const buttonEl = document.querySelector('button');
+
+  buttonEl.addEventListener('click', () => {
+    swiperEl.swiper.slideNext();
+  });
+</script>
+Events
+All Swiper events are available as native DOM events but with lowercase names and swiper prefix (configurable via events-prefix parameter). E.g. slideChange becomes swiperslidechange.
+
+All event handler arguments are passed as array in event.detail:
+
+<swiper-container>
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+
+<script>
+  const swiperEl = document.querySelector('swiper-container');
+
+  swiperEl.addEventListener('swiperprogress', (event) => {
+    const [swiper, progress] = event.detail;
+  });
+
+  swiperEl.addEventListener('swiperslidechange', (event) => {
+    console.log('slide changed');
+  });
+</script>
+It is also possible to prefix emitted events names to prevent clashing with other libs or native events using events-prefix attribute/parameter:
+
+<swiper-container events-prefix="swiper-">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+
+<script>
+  const swiperEl = document.querySelector('swiper-container');
+
+  swiperEl.addEventListener('swiper-progress', (event) => {
+    const [swiper, progress] = event.detail;
+  });
+
+  swiperEl.addEventListener('swiper-slidechange', (event) => {
+    console.log('slide changed');
+  });
+</script>
+Pagination, Navigation, Scrollbar
+If you don't pass these modules elements in parameters (e.g. scrollbar.el, pagination.el), it will render them automatically, if module parameter is specified:
+
+<!-- enable navigation, pagination, scrollbar -->
+<swiper-container navigation="true" pagination="true" scrollbar="true">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+Lazy
+If you use lazy loading images, it requires the lazy preloader element to be added to the each slide. swiper-slide component can do this automatically by adding lazy="true" attribute:
+
+<swiper-container>
+  <!-- lazy="true" attribute will automatically render the preloader element -->
+  <swiper-slide lazy="true">
+    <img src="..." loading="lazy" />
+  </swiper-slide>
+  <swiper-slide lazy="true">
+    <img src="..." loading="lazy" />
+  </swiper-slide>
+  <swiper-slide lazy="true">
+    <img src="..." loading="lazy" />
+  </swiper-slide>
+  ...
+</swiper-container>
+Virtual Slides
+We have 2 options to use Virtual slides in Swiper web components.
+
+First option is to pass slides in virtual.slides array, but it will require to use element properties to initialize Swiper element:
+
+<swiper-container init="false"></swiper-container>
+<script>
+  // swiper element
+  const swiperEl = document.querySelector('swiper-container');
+
+  // swiper parameters
+  const swiperParams = {
+    virtual: {
+      // virtual slides
+      slides: ['Slide 1', 'Slide 2', 'Slide 3'],
+    },
+  };
+
+  // assign all parameters to Swiper element
+  Object.assign(swiperEl, swiperParams);
+
+  // and now initialize it
+  swiperEl.initialize();
+</script>
+Since version 9, Swiper virtual slides can work with slides originally rendered in DOM. On initialize it will remove them from DOM, cache and then re-use the ones which are required:
+
+<!-- it is enough to add virtual="true" attribute -->
+<swiper-container virtual="true">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  ...
+</swiper-container>
+Thumbs
+In version 9 thumbs.swiper parameter also accepts CSS Selector of the thumbs swiper. So to make both with Swiper elements we can use the following:
+
+<!-- main swiper, pass thumbs swiper as CSS selector -->
+<swiper-container thumbs-swiper=".my-thumbs"> ... </swiper-container>
+
+<!-- thumbs swiper -->
+<swiper-container class="my-thumbs"> ... </swiper-container>
+Controller
+Same as with Thumbs, Controller in version 9 also accepts CSS Selector:
+
+<swiper-container class="swiper-1" controller-control=".swiper-2">
+  ...
+</swiper-container>
+
+<swiper-container class="swiper-2" controller-control=".swiper-1">
+  ...
+</swiper-container>
