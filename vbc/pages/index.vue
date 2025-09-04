@@ -435,6 +435,66 @@
         </div>
       </div>
     </section>
+
+    <!-- Game Modes Section -->
+    <section class="bg-gray-900 p-6 md:p-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700 flex items-center">
+          <Icon name="heroicons:puzzle-piece" class="mr-3 text-yellow-500" />
+          Game Modes
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <GameModeCard
+            title="Career Mode"
+            description="Build your fighter from rookie to champion"
+            icon="heroicons:user-circle"
+            color="blue"
+            button-text="Start Career"
+            @click="handleGameModeClick('career')"
+          />
+          <GameModeCard
+            title="Tournaments"
+            description="Compete in structured championship events"
+            icon="heroicons:trophy"
+            color="red"
+            button-text="Join Tournament"
+            @click="handleGameModeClick('tournament')"
+          />
+          <GameModeCard
+            title="Multiplayer"
+            description="Challenge players from around the world"
+            icon="heroicons:users"
+            color="green"
+            button-text="Find Match"
+            @click="handleGameModeClick('multiplayer')"
+          />
+          <GameModeCard
+            title="Custom Fight"
+            description="Create your own fight rules and scenarios"
+            icon="heroicons:hand-raised"
+            color="purple"
+            button-text="Create Fight"
+            @click="handleGameModeClick('custom')"
+          />
+          <GameModeCard
+            title="Training"
+            description="Practice combos and perfect your technique"
+            icon="heroicons:academic-cap"
+            color="orange"
+            button-text="Start Training"
+            @click="handleGameModeClick('training')"
+          />
+          <GameModeCard
+            title="Fighter Roster"
+            description="Browse and unlock all available fighters"
+            icon="heroicons:book-open"
+            color="teal"
+            button-text="View Roster"
+            @click="handleGameModeClick('roster')"
+          />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -449,6 +509,12 @@ const sidebarRef = ref(null);
 
 const toggleSidebar = () => {
   sidebarRef.value?.toggleSidebar();
+};
+
+const handleGameModeClick = (mode) => {
+  console.log(`Game mode clicked: ${mode}`);
+  // Add your navigation logic here
+  // For example: navigateTo(`/game/${mode}`)
 };
 
 onMounted(() => {
