@@ -50,7 +50,7 @@ const cardClasses = computed(() => {
     'orange': 'bg-gradient-to-br from-orange-600 to-orange-800',
     'teal': 'bg-gradient-to-br from-teal-600 to-teal-800'
   }
-  return `${colorMap[props.color] || colorMap.blue} rounded-xl p-6 text-left card-hover`
+  return `${colorMap[props.color] || colorMap.blue} rounded-xl p-6 text-center card-hover`
 })
 
 
