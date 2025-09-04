@@ -440,17 +440,16 @@
     <section class="bg-gray-900 p-6 md:p-8">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700 flex items-center">
-          <Icon name="heroicons:puzzle-piece" class="mr-3 text-yellow-500" />
           Game Modes
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <GameModeCard
-            title="Career Mode"
-            description="Build your fighter from rookie to champion"
+            title="Legacy Mode"
+            description="Build your fighter from amateur to G.O.A.T"
             icon="heroicons:user-circle"
             color="blue"
-            button-text="Start Career"
-            @click="handleGameModeClick('career')"
+            button-text="Start Legacy"
+            @click="handleGameModeClick('legacy')"
           />
           <GameModeCard
             title="Tournaments"
@@ -671,7 +670,6 @@ onMounted(() => {
 }
 
 .swiper-slide {
-  text-align: center;
   font-size: 18px;
   background: transparent;
   display: flex;
