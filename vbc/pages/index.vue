@@ -263,6 +263,178 @@
         </div>
       </div>
     </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="bg-gray-900 p-6 md:p-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-6 pb-2 border-b border-gray-700 flex items-center">
+          <i class="fas fa-calendar-alt mr-3 text-green-500"></i>
+          Upcoming Events
+        </h2>
+        <!-- Desktop Swiper -->
+        <div class="hidden md:block">
+          <div class="swiper events-desktop-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <EventCard
+                  title="Heavyweight Championship: Iron Fist vs The Titan"
+                  date="September 15, 2025"
+                  time="8:00 PM EST"
+                  description="The most anticipated heavyweight match of the year! Two undefeated champions face off for the ultimate title."
+                  access-type="🎟️ Premium Access"
+                  button-text="Get Tickets"
+                  button-color="red"
+                  date-color="red"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Amateur Boxing Tournament"
+                  date="September 20, 2025"
+                  time="6:00 PM EST"
+                  description="Rising stars compete for a chance to turn pro. Discover the next generation of boxing talent."
+                  access-type="🆓 Free Entry"
+                  button-text="Register Now"
+                  button-color="green"
+                  date-color="green"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Women's World Championship"
+                  date="September 25, 2025"
+                  time="9:00 PM EST"
+                  description="The top female boxers from around the world battle for the world championship title."
+                  access-type="🎟️ Premium Access"
+                  button-text="Buy Tickets"
+                  button-color="purple"
+                  date-color="purple"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Charity Exhibition Match"
+                  date="October 5, 2025"
+                  time="7:30 PM EST"
+                  description="Legendary boxers return to the ring for a special charity event. All proceeds go to youth boxing programs."
+                  access-type="🎟️ VIP Access"
+                  button-text="Donate & Attend"
+                  button-color="blue"
+                  date-color="blue"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Middleweight Title Defense"
+                  date="October 12, 2025"
+                  time="8:30 PM EST"
+                  description="The reigning middleweight champion defends his title against the #1 contender in a 12-round battle."
+                  access-type="🎟️ Premium Access"
+                  button-text="Get Tickets"
+                  button-color="red"
+                  date-color="red"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Boxing Masterclass Workshop"
+                  date="October 18, 2025"
+                  time="5:00 PM EST"
+                  description="Learn from the pros! A hands-on workshop covering advanced boxing techniques and strategies."
+                  access-type="🆓 Free for Members"
+                  button-text="Reserve Spot"
+                  button-color="green"
+                  date-color="green"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <!-- Mobile Swiper -->
+        <div class="md:hidden">
+          <div class="swiper events-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <EventCard
+                  title="Heavyweight Championship: Iron Fist vs The Titan"
+                  date="September 15, 2025"
+                  time="8:00 PM EST"
+                  description="The most anticipated heavyweight match of the year! Two undefeated champions face off for the ultimate title."
+                  access-type="🎟️ Premium Access"
+                  button-text="Get Tickets"
+                  button-color="red"
+                  date-color="red"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Amateur Boxing Tournament"
+                  date="September 20, 2025"
+                  time="6:00 PM EST"
+                  description="Rising stars compete for a chance to turn pro. Discover the next generation of boxing talent."
+                  access-type="🆓 Free Entry"
+                  button-text="Register Now"
+                  button-color="green"
+                  date-color="green"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Women's World Championship"
+                  date="September 25, 2025"
+                  time="9:00 PM EST"
+                  description="The top female boxers from around the world battle for the world championship title."
+                  access-type="🎟️ Premium Access"
+                  button-text="Buy Tickets"
+                  button-color="purple"
+                  date-color="purple"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Charity Exhibition Match"
+                  date="October 5, 2025"
+                  time="7:30 PM EST"
+                  description="Legendary boxers return to the ring for a special charity event. All proceeds go to youth boxing programs."
+                  access-type="🎟️ VIP Access"
+                  button-text="Donate & Attend"
+                  button-color="blue"
+                  date-color="blue"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Middleweight Title Defense"
+                  date="October 12, 2025"
+                  time="8:30 PM EST"
+                  description="The reigning middleweight champion defends his title against the #1 contender in a 12-round battle."
+                  access-type="🎟️ Premium Access"
+                  button-text="Get Tickets"
+                  button-color="red"
+                  date-color="red"
+                />
+              </div>
+              <div class="swiper-slide">
+                <EventCard
+                  title="Boxing Masterclass Workshop"
+                  date="October 18, 2025"
+                  time="5:00 PM EST"
+                  description="Learn from the pros! A hands-on workshop covering advanced boxing techniques and strategies."
+                  access-type="🆓 Free for Members"
+                  button-text="Reserve Spot"
+                  button-color="green"
+                  date-color="green"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -322,6 +494,27 @@ onMounted(() => {
     },
   });
 
+  // Initialize Events Desktop Swiper
+  new Swiper('.events-desktop-swiper', {
+    modules: [Navigation, Pagination],
+    slidesPerView: 3,
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.events-desktop-swiper .swiper-button-next',
+      prevEl: '.events-desktop-swiper .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    },
+  });
+
   // Initialize Live Mobile Swiper
   new Swiper('.live-swiper', {
     modules: [Navigation, Pagination],
@@ -346,6 +539,23 @@ onMounted(() => {
     spaceBetween: 20,
     pagination: {
       el: '.fights-swiper .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  // Initialize Events Mobile Swiper
+  new Swiper('.events-swiper', {
+    modules: [Navigation, Pagination],
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.events-swiper .swiper-pagination',
       clickable: true,
     },
     breakpoints: {
