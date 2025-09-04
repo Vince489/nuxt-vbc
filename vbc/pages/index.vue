@@ -277,7 +277,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <EventCard
-                  title="Heavyweight Championship: Iron Fist vs The Titan"
+                  title="Heavyweight Championship"
                   date="September 15, 2025"
                   time="8:00 PM EST"
                   description="The most anticipated heavyweight match of the year! Two undefeated champions face off for the ultimate title."
